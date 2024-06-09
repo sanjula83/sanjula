@@ -1,0 +1,8 @@
+string1 = input()
+string2 = input()
+for i in range(len(string1) - len(string2) + 1):
+    if string1[i:i+len(string2)] == string2:
+        print(i)
+        break
+else:
+    print(-1)
